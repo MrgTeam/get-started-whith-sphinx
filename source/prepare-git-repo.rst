@@ -25,7 +25,7 @@ For now we dont want to use GitHub pages in this way. So we'll leave the \ **mai
    If you really want to test your website, you can push an `index.html` file at the `root` of the `master` branch and go to you website url (\ **https://username.github.io**\ )
 
 
-Organize documentation your repository
+Organize your documentation repository
 --------------------------------------
 
 Here, what we will do, is to create another repository that will be a child of the "main" repository.
