@@ -6,6 +6,9 @@
 Welcome to Sphinx for beginners's documentation!
 ================================================
 
+I made this documentation myself in order to learn how to use Sphinx and the GitHub Pages. 
+This documentation is intended for people who have never used either GitHub Pages or Sphinx, it is a good start to setting up a first environment. 
+
 .. toctree::
    :maxdepth: 2
    :caption: Get stated with Sphinx:
@@ -13,10 +16,3 @@ Welcome to Sphinx for beginners's documentation!
    prepare-git-repo
    installing-sphinx
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
