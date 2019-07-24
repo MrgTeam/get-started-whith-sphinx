@@ -22,11 +22,11 @@ For now we dont want to use GitHub pages in this way. So we'll leave the \ **mai
 
 .. note:: 
 
-   If you realy want to test your website, you can push an `index.html` file at the `root` of the `master` branch and go to you website url (\ **https://username.github.io**\ )
+   If you really want to test your website, you can push an `index.html` file at the `root` of the `master` branch and go to you website url (\ **https://username.github.io**\ )
 
 
-Organize your repository
-------------------------
+Organize documentation your repository
+--------------------------------------
 
 Here, what we will do, is to create another repository that will be a child of the "main" repository.
 The objective is to have a repository by written documentation.
@@ -36,11 +36,20 @@ The documents will be respectively accessible at \ **https://username.github.io/
 
 .. note::
 
-   We therefore respect the following structure : \ **https://username.github.io/another-repository** \ 
+   We therefore respect the following structure : \ **https://username.github.io/documentation-repository** \ 
 
 
 To respect this structure, we gonna create a new repository named `get-started-whith-sphinx`.
 
+Next, as the same as the `main` repository, you have to open the \ **Settings tab**\  and scroll down to \ **GitHub Pages section**\.
+Click on the dropdown list and choose \ **master branch**\.
+
+.. image:: _static/select-source.png
+   :align: center
 
 
+Your repository is now ready to host your Sphinx documentation ! 
 
+.. note:: 
+
+   If you really want to test your website, you can push an `index.html` file at the `root` of the `master` branch and go to you website url (\ **https://username.github.io/your-new-repo**\ )

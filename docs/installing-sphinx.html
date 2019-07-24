@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sphinx &mdash; Sphinx for beginners 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Sphinx for beginners 0.0.1 documentation" href="index.html"/>
+        <link rel="prev" title="Prepare GIT repository" href="prepare-git-repo.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Sphinx for beginners
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Get stated with Sphinx:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="prepare-git-repo.html">Prepare GIT repository</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prepare-to-git">Prepare to GIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#first-build">First build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#push-to-github">Push to GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#personalize-your-pages">Personalize your Pages</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx for beginners</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Sphinx</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/installing-sphinx.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx">
+<h1>Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Sphinx is very easy to set up</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ pip install Sphinx
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sphinx use a certain number of dependencies to run, you may have some missing dependencies but don’t worry.
+Just install them as the stages progress and retry the ones that went wrong.</p>
+</div>
+<p>Verify you Sphinx installation</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sphinx-build --version
+$ sphinx-quickstart
+</pre></div>
+</div>
+</div>
+<div class="section" id="quick-start">
+<h2>Quick start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<p>In the previous chapter, we created a repository called  <cite>get-started-with-sphinx</cite>.</p>
+<p>Clone this empty repository and <cite>cd</cite> in.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/username/get-started-whith-sphinx.git
+$ <span class="nb">cd</span> get-started-with-sphinx
+</pre></div>
+</div>
+<p>Now we just have to initialize a new Sphinx project in our local repository</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sphinx use a certain number of dependencies to run, you may have some missing dependencies but don’t worry.
+Just install them as the stages progress and retry the ones that went wrong.</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sphinx-quickstart
+     Welcome to the Sphinx 2.1.2 quickstart utility.
+
+     Please enter values for the following settings (just press Enter to
+     accept a default value, if one is given in brackets).
+
+     Selected root path: .
+
+     You have two options for placing the build directory for Sphinx output.
+     Either, you use a directory &quot;_build&quot; within the root path, or you separate
+     &quot;source&quot; and &quot;build&quot; directories within the root path.
+     &gt; Separate source and build directories (y/n) [n]: y
+
+     The project name will occur in several places in the built documentation.
+     &gt; Project name: sphinx
+     &gt; Author name(s): jerome
+     &gt; Project release []: 0.0.1
+
+     If the documents are to be written in a language other than English,
+     you can select a language here by its language code. Sphinx will then
+     translate text that it generates into that language.
+
+     For a list of supported codes, see
+     https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
+     &gt; Project language [en]:
+
+     Creating file .\source\conf.py.
+     Creating file .\source\index.rst.
+     Creating file .\Makefile.
+     Creating file .\make.bat.
+
+     Finished: An initial directory structure has been created.
+
+     You should now populate your master file .\source\index.rst and create other documentation
+     source files. Use the Makefile to build the docs, like so:
+     make builder
+     where &quot;builder&quot; is one of the supported builders, e.g. html, latex or linkcheck.
+</pre></div>
+</div>
+<p>When browsing through the folder, you will notice that Sphinx has automatically created the necessary files.</p>
+</div>
+<div class="section" id="prepare-to-git">
+<h2>Prepare to GIT<a class="headerlink" href="#prepare-to-git" title="Permalink to this headline">¶</a></h2>
+<p>Now that Sphinx is initialized, we have three more steps to prepare for compatibility with GIT.</p>
+<ul>
+<li><p>Configure the Makefile</p>
+<blockquote>
+<div><p>In the <cite>make.bat</cite> file and the <cite>Makefile</cite> file replace <strong>BUILDDIR=build</strong> by <strong>BUILDDIR=docs</strong></p>
+</div></blockquote>
+</li>
+<li><p>Create docs directory</p>
+<blockquote>
+<div><p>At the root of the project, delete the <strong>build/</strong> folder and create another one called <strong>docs/</strong></p>
+</div></blockquote>
+</li>
+<li><p>Disable nojekyll</p>
+<blockquote>
+<div><p>Create a file called <strong>.nojekyll</strong> in the <strong>docs/</strong> folder.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="first-build">
+<h2>First build<a class="headerlink" href="#first-build" title="Permalink to this headline">¶</a></h2>
+<p>Now we are ready to perform our first Sphinx build</p>
+<p>You just have to go to the <strong>root</strong> of the project and type</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sphinx-build -b html <span class="nb">source</span> docs
+</pre></div>
+</div>
+<p>This will generate the corresponding HTML files in the the <strong>docs/</strong> folder.</p>
+</div>
+<div class="section" id="push-to-github">
+<h2>Push to GitHub<a class="headerlink" href="#push-to-github" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have completed all the configuration steps, all that remains is to push on GitHub</p>
+<p>Don’t forget to select the new source folder in the <strong>Setting GitHup Pages section</strong> of your repository.</p>
+<img alt="_images/select-docs-source.png" class="align-center" src="_images/select-docs-source.png" />
+<p>Congratulation, your website is now reachable at <strong>https://username.github.io/get-started-with-sphinx</strong></p>
+</div>
+<div class="section" id="personalize-your-pages">
+<h2>Personalize your Pages<a class="headerlink" href="#personalize-your-pages" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is in the .rst files that you can start writing content for your documentation, try to modify the index.rst file.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Each time you modify an.rst file you will have to rebuild your site.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sphinx-build -b html <span class="nb">source</span> docs
+</pre></div>
+</div>
+</div>
+<p>Here your gona find the some .rst documentation <a class="reference external" href="https://deusyss.developpez.com/tutoriels/Python/SphinxDoc/">https://deusyss.developpez.com/tutoriels/Python/SphinxDoc/</a></p>
+<p>For theme change go to <a class="reference external" href="https://sphinx-themes.org/">https://sphinx-themes.org/</a></p>
+<p>I voluntarily left the source files of my documentation on the repository for you to use as an example <a class="reference external" href="https://github.com/MrgTeam/get-started-whith-sphinx/tree/master/source">https://github.com/MrgTeam/get-started-whith-sphinx/tree/master/source</a></p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="prepare-git-repo.html" class="btn btn-neutral" title="Prepare GIT repository" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jerome MOURET.
+
+    </p>
+  </div>
+  
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

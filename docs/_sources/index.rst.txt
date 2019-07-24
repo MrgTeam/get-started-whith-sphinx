@@ -11,6 +11,7 @@ Welcome to Sphinx for beginners's documentation!
    :caption: Get stated with Sphinx:
 
    prepare-git-repo
+   installing-sphinx
 
 
 Indices and tables

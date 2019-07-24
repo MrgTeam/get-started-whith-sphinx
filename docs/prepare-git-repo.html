@@ -36,6 +36,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Sphinx for beginners 0.0.1 documentation" href="index.html"/>
+        <link rel="next" title="Sphinx" href="installing-sphinx.html"/>
         <link rel="prev" title="Welcome to Sphinx for beginners’s documentation!" href="index.html"/> 
 
   
@@ -89,9 +90,10 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Prepare GIT repository</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#create-the-main-github-repository">Create the <cite>main</cite>  GitHub repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#enable-github-pages-github-repository">Enable GitHub Pages GitHub repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#organize-documentation-your-repository">Organize documentation your repository</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="installing-sphinx.html">Sphinx</a></li>
 </ul>
 
             
@@ -169,18 +171,27 @@ Click the <strong>choose a theme</strong> button to start the process of creatin
 <p>For now we dont want to use GitHub pages in this way. So we’ll leave the <strong>main</strong> repository out and come back to it later.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you realy want to test your website, you can push an <cite>index.html</cite> file at the <cite>root</cite> of the <cite>master</cite> branch and go to you website url (<strong>https://username.github.io</strong>)</p>
+<p>If you really want to test your website, you can push an <cite>index.html</cite> file at the <cite>root</cite> of the <cite>master</cite> branch and go to you website url (<strong>https://username.github.io</strong>)</p>
 </div>
 </div>
-<div class="section" id="enable-github-pages-github-repository">
-<h2>Enable GitHub Pages GitHub repository<a class="headerlink" href="#enable-github-pages-github-repository" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="organize-documentation-your-repository">
+<h2>Organize documentation your repository<a class="headerlink" href="#organize-documentation-your-repository" title="Permalink to this headline">¶</a></h2>
 <p>Here, what we will do, is to create another repository that will be a child of the “main” repository.
 The objective is to have a repository by written documentation.</p>
 <p>For example, imagine that we want to write a documentation on <cite>python</cite> and another on <cite>ruby</cite>.
 The documents will be respectively accessible at <strong>https://username.github.io/python</strong>  and <strong>https://username.github.io/ruby</strong> .</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>We therefore respect the following logic : <strong>https://username.github.io/another-repository</strong> .</p>
+<p>We therefore respect the following structure : <strong>https://username.github.io/documentation-repository</strong> </p>
+</div>
+<p>To respect this structure, we gonna create a new repository named <cite>get-started-whith-sphinx</cite>.</p>
+<p>Next, as the same as the <cite>main</cite> repository, you have to open the <strong>Settings tab</strong> and scroll down to <strong>GitHub Pages section</strong>.
+Click on the dropdown list and choose <strong>master branch</strong>.</p>
+<img alt="_images/select-source.png" class="align-center" src="_images/select-source.png" />
+<p>Your repository is now ready to host your Sphinx documentation !</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you really want to test your website, you can push an <cite>index.html</cite> file at the <cite>root</cite> of the <cite>master</cite> branch and go to you website url (<strong>https://username.github.io/your-new-repo</strong>)</p>
 </div>
 </div>
 </div>
@@ -194,6 +205,8 @@ The documents will be respectively accessible at <strong>https://username.github
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installing-sphinx.html" class="btn btn-neutral float-right" title="Sphinx" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="Welcome to Sphinx for beginners’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
