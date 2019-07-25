@@ -37,7 +37,7 @@ Clone this empty repository and `cd` in.
    $ cd get-started-with-sphinx
 
 Now we just have to initialize a new Sphinx collection in our local repository.
-The root directory of a Sphinx collection of reStructuredText (rst) document sources is called the source directory (\ **sources/**\  ). 
+The root directory of a Sphinx collection of reStructuredText (rst) document sources is called the source directory (\ **source/**\  ). 
 This directory also contains the Sphinx configuration file conf.py, where you can configure all aspects of how Sphinx reads your sources and builds your documentation.
 
 .. note::
