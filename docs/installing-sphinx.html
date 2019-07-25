@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sphinx &mdash; Sphinx for beginners 0.0.1 documentation</title>
+  <title>Getting Started with Sphinx &mdash; Sphinx for beginners 0.0.1 documentation</title>
   
 
   
@@ -88,11 +88,11 @@
               <p class="caption"><span class="caption-text">Get stated with Sphinx:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="prepare-git-repo.html">Prepare GIT repository</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started with Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation-from-pypi">Installation from Pypi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-the-documentation-sources">Setting up the documentation sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prepare-to-git">Prepare to GIT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#first-build">First build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-the-build">Running the build</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#push-to-github">Push to GitHub</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#personalize-your-pages">Personalize your Pages</a></li>
 </ul>
@@ -141,7 +141,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Sphinx</li>
+      <li>Getting Started with Sphinx</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,10 +160,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sphinx">
-<h1>Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="getting-started-with-sphinx">
+<h1>Getting Started with Sphinx<a class="headerlink" href="#getting-started-with-sphinx" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installation-from-pypi">
+<h2>Installation from Pypi<a class="headerlink" href="#installation-from-pypi" title="Permalink to this headline">¶</a></h2>
 <p>Sphinx is very easy to set up</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ pip install Sphinx
 </pre></div>
@@ -173,26 +173,31 @@
 <p>Sphinx use a certain number of dependencies to run, you may have some missing dependencies but don’t worry.
 Just install them as the stages progress and retry the ones that went wrong.</p>
 </div>
-<p>Verify you Sphinx installation</p>
+<p>After installation, type sphinx-build –version on the command prompt.
+If everything worked fine, you will see the version number for the Sphinx package you just installed.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sphinx-build --version
   sphinx-build <span class="m">2</span>.1.2
 </pre></div>
 </div>
 </div>
-<div class="section" id="quick-start">
-<h2>Quick start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="setting-up-the-documentation-sources">
+<h2>Setting up the documentation sources<a class="headerlink" href="#setting-up-the-documentation-sources" title="Permalink to this headline">¶</a></h2>
 <p>In the previous chapter, we created a repository called  <cite>get-started-with-sphinx</cite>.</p>
 <p>Clone this empty repository and <cite>cd</cite> in.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/username/get-started-whith-sphinx.git
 $ <span class="nb">cd</span> get-started-with-sphinx
 </pre></div>
 </div>
-<p>Now we just have to initialize a new Sphinx project in our local repository</p>
+<p>Now we just have to initialize a new Sphinx collection in our local repository.
+The root directory of a Sphinx collection of reStructuredText (rst) document sources is called the source directory (<strong>sources/</strong> ).
+This directory also contains the Sphinx configuration file conf.py, where you can configure all aspects of how Sphinx reads your sources and builds your documentation.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Sphinx use a certain number of dependencies to run, you may have some missing dependencies but don’t worry.
 Just install them as the stages progress and retry the ones that went wrong.</p>
 </div>
+<p>Sphinx comes with a script called <strong>sphinx-quickstart</strong> that sets up a source directory and creates a default conf.py with the most useful configuration values from a few questions it asks you.
+To use this, run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sphinx-quickstart
      Welcome to the Sphinx 2.1.2 quickstart utility.
 
@@ -232,7 +237,8 @@ Just install them as the stages progress and retry the ones that went wrong.</p>
      where &quot;builder&quot; is one of the supported builders, e.g. html, latex or linkcheck.
 </pre></div>
 </div>
-<p>When browsing through the folder, you will notice that Sphinx has automatically created the necessary files.</p>
+<p>Let’s assume you’ve run sphinx-quickstart.
+It created a source directory with conf.py and a master document, index.rst (if you accepted the defaults)</p>
 </div>
 <div class="section" id="prepare-to-git">
 <h2>Prepare to GIT<a class="headerlink" href="#prepare-to-git" title="Permalink to this headline">¶</a></h2>
@@ -255,10 +261,10 @@ Just install them as the stages progress and retry the ones that went wrong.</p>
 </li>
 </ul>
 </div>
-<div class="section" id="first-build">
-<h2>First build<a class="headerlink" href="#first-build" title="Permalink to this headline">¶</a></h2>
-<p>Now we are ready to perform our first Sphinx build</p>
-<p>You just have to go to the <strong>root</strong> of the project and type</p>
+<div class="section" id="running-the-build">
+<h2>Running the build<a class="headerlink" href="#running-the-build" title="Permalink to this headline">¶</a></h2>
+<p>Now we are ready to perform our first Sphinx build, a build is started with the <strong>sphinx-build</strong> program.
+At the <strong>root</strong> directory do :</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sphinx-build -b html <span class="nb">source</span> docs
 </pre></div>
 </div>
@@ -281,6 +287,12 @@ Just install them as the stages progress and retry the ones that went wrong.</p>
 <p class="admonition-title">Warning</p>
 <p>Each time you modify an.rst file you will have to rebuild your site.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sphinx-build -b html <span class="nb">source</span> docs
+</pre></div>
+</div>
+<p>The build can also be executed by running  <strong>make</strong> with the name of the builder.
+Make for windows <a class="reference external" href="http://gnuwin32.sourceforge.net/packages/make.htm">http://gnuwin32.sourceforge.net/packages/make.htm</a>
+For example:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ make html
 </pre></div>
 </div>
 </div>

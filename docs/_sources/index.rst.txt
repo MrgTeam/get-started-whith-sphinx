@@ -6,8 +6,13 @@
 Welcome to Sphinx for beginners's documentation!
 ================================================
 
-I made this documentation myself in order to learn how to use Sphinx and the GitHub Pages. 
+Sphinx is a tool that makes it easy to create intelligent and beautiful documentation.
+I made this documentation in order to learn how to use Sphinx and the GitHub Pages. 
 This documentation is intended for people who have never used either GitHub Pages or Sphinx, it is a good start to setting up a first environment. 
+
+.. note:: 
+   Here you can find the full Sphinx documentation
+   http://www.sphinx-doc.org/en/master/usage/quickstart.html
 
 .. toctree::
    :maxdepth: 2

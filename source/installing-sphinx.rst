@@ -1,8 +1,8 @@
-Sphinx 
-======
+Getting Started with Sphinx 
+===========================
 
-Installation
-------------
+Installation from Pypi
+----------------------
 
 Sphinx is very easy to set up 
 
@@ -15,7 +15,8 @@ Sphinx is very easy to set up
     Sphinx use a certain number of dependencies to run, you may have some missing dependencies but don't worry.
     Just install them as the stages progress and retry the ones that went wrong.
 
-Verify you Sphinx installation 
+After installation, type sphinx-build --version on the command prompt. 
+If everything worked fine, you will see the version number for the Sphinx package you just installed. 
 
 .. code-block:: shell 
 
@@ -23,8 +24,8 @@ Verify you Sphinx installation
      sphinx-build 2.1.2
 
 
-Quick start
------------
+Setting up the documentation sources
+------------------------------------
 
 In the previous chapter, we created a repository called  `get-started-with-sphinx`.
 
@@ -35,12 +36,17 @@ Clone this empty repository and `cd` in.
    $ git clone https://github.com/username/get-started-whith-sphinx.git
    $ cd get-started-with-sphinx
 
-Now we just have to initialize a new Sphinx project in our local repository
+Now we just have to initialize a new Sphinx collection in our local repository.
+The root directory of a Sphinx collection of reStructuredText (rst) document sources is called the source directory (\ **sources/**\  ). 
+This directory also contains the Sphinx configuration file conf.py, where you can configure all aspects of how Sphinx reads your sources and builds your documentation.
 
 .. note::
 
     Sphinx use a certain number of dependencies to run, you may have some missing dependencies but don't worry.
     Just install them as the stages progress and retry the ones that went wrong.
+
+Sphinx comes with a script called \ **sphinx-quickstart**\  that sets up a source directory and creates a default conf.py with the most useful configuration values from a few questions it asks you. 
+To use this, run:
 
 .. code-block::  
 
@@ -82,8 +88,8 @@ Now we just have to initialize a new Sphinx project in our local repository
         make builder
         where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
         
-
-When browsing through the folder, you will notice that Sphinx has automatically created the necessary files. 
+Let’s assume you’ve run sphinx-quickstart. 
+It created a source directory with conf.py and a master document, index.rst (if you accepted the defaults)
 
 
 Prepare to GIT 
@@ -105,12 +111,12 @@ Now that Sphinx is initialized, we have three more steps to prepare for compatib
    Create a file called \ **.nojekyll**\  in the \ **docs/**\  folder.  
 
 
-First build
------------
+Running the build
+-----------------
 
-Now we are ready to perform our first Sphinx build
+Now we are ready to perform our first Sphinx build, a build is started with the \ **sphinx-build**\  program.
+At the \ **root**\  directory do :
 
-You just have to go to the \ **root**\  of the project and type
 
 .. code-block:: shell 
 
@@ -149,8 +155,14 @@ Personalize your Pages
    .. code-block:: shell 
 
       $ sphinx-build -b html source docs
+ 
+   The build can also be executed by running  \ **make**\  with the name of the builder. 
+   Make for windows http://gnuwin32.sourceforge.net/packages/make.htm
+   For example:
 
-   
+   .. code-block:: shell 
+
+      $ make html
 
 Here your gona find the some .rst documentation https://deusyss.developpez.com/tutoriels/Python/SphinxDoc/
 
