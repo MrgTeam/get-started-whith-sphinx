@@ -39,10 +39,10 @@ The documents will be respectively accessible at \ **https://username.github.io/
    We therefore respect the following structure : \ **https://username.github.io/documentation-repository** \ 
 
 
-To respect this structure, we gonna create a new repository named `get-started-whith-sphinx`.
+To respect this structure, we gonna create a new repository named `get-started-with-sphinx`.
 
 Next, as the same as the `main` repository, you have to open the \ **Settings tab**\  and scroll down to \ **GitHub Pages section**\.
-Click on the dropdown list and choose \ **master branch**\.
+Click on the \ **source**\  dropdown list and choose \ **master branch**\.
 
 .. image:: _static/select-source.png
    :align: center
@@ -52,4 +52,4 @@ Your repository is now ready to host your Sphinx documentation !
 
 .. note:: 
 
-   If you really want to test your website, you can push an `index.html` file at the `root` of the `master` branch and go to you website url (\ **https://username.github.io/your-new-repo**\ )
+   If you really want to test your website, you can push an `index.html` file at the `root` of the `master` branch and go to you website url (\ **https://username.github.io/get-started-with-sphinx**\ )

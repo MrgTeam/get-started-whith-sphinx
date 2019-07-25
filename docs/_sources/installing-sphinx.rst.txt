@@ -20,7 +20,7 @@ Verify you Sphinx installation
 .. code-block:: shell 
 
    $ sphinx-build --version
-   $ sphinx-quickstart
+     sphinx-build 2.1.2
 
 
 Quick start
